@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="portfolio1.css" />
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"/>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"/>
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    
+    <!-- Navbar -->
+    <nav>
+      <h1>Portfolio</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+      src="niki.jpg"
+      alt="photo"
+      loading="lazy"
+      class="hero-img"
+    />
+      <div class="bio animate_animated animate_shakeX">
+        <div class="bio-title"><h3>Hello, My Name is</h3></div>
+        <h2 class="bio-text">Nikita Vijay Ghadi</h2>
+        <h2 class="bio-text">And I'm a Full stack Developer</h2>
+      </div>
+</section>
+    <!-- More about -->
+    <section class="more-about">
+      <h2>About Me</h2>
+      <p>
+        Hi there! I'm Nikita Vijay Ghadi, A Full Stack Web Developer having specialization in Frontend and Backend development.I'm open to work and I want to be a part of an organisation which would make me
+        more resourceful, innovative and excel by providing a
+        platform for a multifaced growth of my skills gained
+        during my training.
+      </p>
+    </section>
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">Skills</h2>
+  
+      <div class="skills-wrapper">
+        <div class="first-set animate_animated animate_pulse">
+          <img
+            src="html1.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="css1.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="js.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+  
+        <div class="second-set animate_animated animate_pulse">
+          <img
+            src="Java-Logo.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="Mysql_logo.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="gsm.webp"
+            alt=""
+            loading="lazy"
+            class="project-pic"/>
+          <h3 class="project-title">GSM Based 3 Phase Distribution Transformer Monitoring And Protecting System</h3>
+          <p class="project-details">
+            The aim of project is to design a monitoring and protection system for distribution Transormer with the help of gsm technology. 
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="digi.jpg"
+            alt=""
+            loading="lazy"
+            class="project-pic"/>
+          <h3 class="project-title">Digital Clock</h3>
+          <p class="project-details">
+            This is My Digital clock project, crafted with HTML, CSS and JAVASCRIPT.The clock will show the current time in the format of hours, minutes, and seconds. The clock will be updated every second and it also display weather it is AM/PM.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="travel.avif"
+            alt=""
+            loading="lazy"
+            class="project-pic"/>
+          <h3 class="project-title">Travel/Tourism Website</h3>
+          <p class="project-details">
+            A travel website is a sort of business that provides customers with travel-related services. When it comes to the future of this industry, numerous aspects will influence how consumers plan their vacations.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/nikita-ghadi-77828824b" target="_blank"
+        ><img
+          src="link.webp"
+          alt=""
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/Nikitaghadi44" target="_blank"
+        ><img
+          src="github-logo.png"
+          alt=""
+          loading="lazy"
+          class="socicon"
+      /></a>
+    <!-- Scroll to top -->
+    <!-- Footer section -->
+    <!-- Website scripts -->
+    <script src="portfolio3.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
